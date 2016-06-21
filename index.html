@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Teste de Formatos para transferência de dados</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section>
+            <form method="post" action="">
+                <legend>Informe formato e quantidade de registros:</legend>
+                <select name="formato" class="formato">
+                    <option value="xml">XML</option>
+                    <!-- 
+                    <option value="json:php">JSON ENCODADO</option>
+                    <option value="json:livre">JSON LIVRE</option>
+                    -->
+                    <option value="json">JSON</option>
+                    <option value="csv">CSV</option>
+                    <option value="lista">LISTA (HTML)</option>
+                    <option value="tabela">TABELA (HTML)</option>
+                </select>
+                <select name="metodo" class="metodo">
+                    <option value="inserirElementos">Inserir Elementos</option>
+                    <option value="inserirElementosDiretamenteNoDom">Inserir Elementos diretamente no DOM</option>
+                    <option value="inserirHTML">Inserir HTML</option>
+                    <option value="inserirDireto">Inserir Direto</option>
+                </select>
+                <input type="int" value="20" class="qtd-registros" />
+
+                <a href="#" class="enviar">Carregar Dados</a>
+            </form>
+        </section>
+        
+        <main id="lista"></main>
+        <p id="tempo"></p>
+
+
+        <!-- Scripts -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
